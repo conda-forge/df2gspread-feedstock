@@ -1,6 +1,6 @@
 {% set name = "df2gspread" %}
-{% set version = "0.2.3" %}
-{% set sha256 = "98501399986871495d115b2331110fef576658b81002c95393c7ea478cb87c84" %}
+{% set version = "1.0.2" %}
+{% set sha256 = "9623fe11c0b75f24f604abe5b2d07940776df358c336458ee1da4b27f90f53df" %}
 
 package:
   name: {{ name|lower }}
