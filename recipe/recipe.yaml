@@ -9,6 +9,8 @@ package:
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
   sha256: fa18a06b2d8b815ac3e437150ba6d1a88612af1d7a528e0c305577c304fafc7a
+  patches:
+    - pip-check.patch
 
 build:
   number: 1003
@@ -33,7 +35,7 @@ tests:
       imports:
         - df2gspread
       python_version: ${{ python_min }}.*
-      
+
 about:
   license: GPL-3.0-or-later
   summary: Manage Google Spreadsheets in Pandas DataFrame with Python
